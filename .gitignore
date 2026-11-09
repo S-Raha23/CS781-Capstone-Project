@@ -1,0 +1,5 @@
+report/
+__pycache__/
+*.pt
+*.bin
+.ipynb_checkpoints/

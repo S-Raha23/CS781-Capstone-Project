@@ -1,0 +1,189 @@
+name,dev_f1,dev_f1_rest,dev_precision,dev_recall,kind,run,arch,method,agg,csls,bm25_w,members,val_f1,trainable_pct,params_total,file
+ens5,0.368,0.333,0.4007,0.3402,ensemble,ensemble,ensemble,mean of z-scores of the 5 best runs,,,,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma,,,,ens5.zip
+ens6,0.3669,0.333,0.3995,0.3392,ensemble,ensemble,ensemble,mean of z-scores of the 6 best runs,,,,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3,,,,ens6.zip
+ens2,0.3658,0.3265,0.3983,0.3381,ensemble,ensemble,ensemble,mean of z-scores of the 2 best runs,,,,decoder_partial+swa_prompt,,,,ens2.zip
+ens3,0.3646,0.3286,0.3971,0.3371,ensemble,ensemble,ensemble,mean of z-scores of the 3 best runs,,,,decoder_partial+swa_prompt+kd_moe_to_decoder4,,,,ens3.zip
+ens8,0.3646,0.3286,0.3971,0.3371,ensemble,ensemble,ensemble,mean of z-scores of the 8 best runs,,,,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4+encdec_lorma,,,,ens8.zip
+decoder_partial__maxsim_sym__csls0.5,0.3635,0.3308,0.3959,0.3361,dense,decoder_partial,decoder,partial,maxsim_sym,0.5,,,0.4325,19.789,54863424,decoder_partial__maxsim_sym__csls0.5.zip
+ens7,0.3635,0.3286,0.3959,0.3361,ensemble,ensemble,ensemble,mean of z-scores of the 7 best runs,,,,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4,,,,ens7.zip
+ens4,0.3635,0.3265,0.3959,0.3361,ensemble,ensemble,ensemble,mean of z-scores of the 4 best runs,,,,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full,,,,ens4.zip
+decoder_partial__maxall__csls0.5,0.3569,0.3157,0.3886,0.3299,dense,decoder_partial,decoder,partial,maxall,0.5,,,0.4325,19.789,54863424,decoder_partial__maxall__csls0.5.zip
+decoder_partial__maxsim_sym__csls0,0.3558,0.3265,0.3874,0.3289,dense,decoder_partial,decoder,partial,maxsim_sym,0,,,0.4325,19.789,54863424,decoder_partial__maxsim_sym__csls0.zip
+swa_prompt__maxsim_sym__csls0.5,0.3558,0.3178,0.3874,0.3289,dense,swa_prompt,swa,prompt,maxsim_sym,0.5,,,0.4211,0.025,54188736,swa_prompt__maxsim_sym__csls0.5.zip
+kd_moe_to_decoder4__maxsim_sym__csls0.5,0.3535,0.3265,0.385,0.3268,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,0.5,,,0.4165,100.0,33152448,kd_moe_to_decoder4__maxsim_sym__csls0.5.zip
+moe_full__maxsim_sym__csls0.5,0.3524,0.32,0.3838,0.3258,dense,moe_full,moe,full,maxsim_sym,0.5,,,0.4165,100.0,141669696,moe_full__maxsim_sym__csls0.5.zip
+decoder_partial__maxsim_sym__csls1,0.3502,0.3178,0.3814,0.3237,dense,decoder_partial,decoder,partial,maxsim_sym,1.0,,,0.4325,19.789,54863424,decoder_partial__maxsim_sym__csls1.zip
+swa_prompt__maxsim_sym__csls1,0.3491,0.32,0.3801,0.3227,dense,swa_prompt,swa,prompt,maxsim_sym,1.0,,,0.4211,0.025,54188736,swa_prompt__maxsim_sym__csls1.zip
+decoder_partial__maxall__csls0,0.3491,0.3049,0.3801,0.3227,dense,decoder_partial,decoder,partial,maxall,0,,,0.4325,19.789,54863424,decoder_partial__maxall__csls0.zip
+swa_prompt__maxsim_sym__csls0.5__bm25w0.25,0.348,0.3243,0.3789,0.3217,dense+bm25,swa_prompt,swa,prompt,maxsim_sym,0.5,0.25,,0.4211,0.025,54188736,swa_prompt__maxsim_sym__csls0.5__bm25w0.25.zip
+ens8__bm25w0.25,0.3469,0.3222,0.3777,0.3207,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 8 best runs,,,0.25,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4+encdec_lorma,,,,ens8__bm25w0.25.zip
+ens2__bm25w0.25,0.3469,0.3178,0.3777,0.3207,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 2 best runs,,,0.25,decoder_partial+swa_prompt,,,,ens2__bm25w0.25.zip
+decoder_partial__maxall__csls1,0.3469,0.3114,0.3777,0.3207,dense,decoder_partial,decoder,partial,maxall,1.0,,,0.4325,19.789,54863424,decoder_partial__maxall__csls1.zip
+decoder_partial__maxsim_q__csls0.5,0.3457,0.3114,0.3765,0.3196,dense,decoder_partial,decoder,partial,maxsim_q,0.5,,,0.4325,19.789,54863424,decoder_partial__maxsim_q__csls0.5.zip
+decoder_partial__maxsim_q__csls0,0.3446,0.3222,0.3753,0.3186,dense,decoder_partial,decoder,partial,maxsim_q,0,,,0.4325,19.789,54863424,decoder_partial__maxsim_q__csls0.zip
+ens4__bm25w0.25,0.3446,0.3178,0.3753,0.3186,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 4 best runs,,,0.25,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full,,,,ens4__bm25w0.25.zip
+decoder_partial__maxsim_sym__csls0.5__bm25w0.25,0.3446,0.3157,0.3753,0.3186,dense+bm25,decoder_partial,decoder,partial,maxsim_sym,0.5,0.25,,0.4325,19.789,54863424,decoder_partial__maxsim_sym__csls0.5__bm25w0.25.zip
+ens7__bm25w0.25,0.3435,0.32,0.3741,0.3176,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 7 best runs,,,0.25,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4,,,,ens7__bm25w0.25.zip
+kd_moe_to_decoder4__maxsim_q__csls0.5,0.3435,0.3178,0.3741,0.3176,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_q,0.5,,,0.4165,100.0,33152448,kd_moe_to_decoder4__maxsim_q__csls0.5.zip
+ens5__bm25w0.25,0.3424,0.3157,0.3729,0.3165,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 5 best runs,,,0.25,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma,,,,ens5__bm25w0.25.zip
+prefix_lorma__maxall__csls0.5,0.3413,0.3222,0.3717,0.3155,dense,prefix_lorma,prefix,lorma,maxall,0.5,,,0.4119,1.391,55637568,prefix_lorma__maxall__csls0.5.zip
+ens6__bm25w0.25,0.3413,0.3157,0.3717,0.3155,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 6 best runs,,,0.25,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3,,,,ens6__bm25w0.25.zip
+prefix_lorma__maxsim_sym__csls0.5,0.3402,0.3049,0.3705,0.3145,dense,prefix_lorma,prefix,lorma,maxsim_sym,0.5,,,0.4119,1.391,55637568,prefix_lorma__maxsim_sym__csls0.5.zip
+ens3__bm25w0.25,0.3391,0.3135,0.3692,0.3135,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 3 best runs,,,0.25,decoder_partial+swa_prompt+kd_moe_to_decoder4,,,,ens3__bm25w0.25.zip
+decoder_partial__mean__csls0.5,0.338,0.307,0.368,0.3124,dense,decoder_partial,decoder,partial,mean,0.5,,,0.4325,19.789,54863424,decoder_partial__mean__csls0.5.zip
+swa_prompt__maxsim_q__csls0.5,0.338,0.2962,0.368,0.3124,dense,swa_prompt,swa,prompt,maxsim_q,0.5,,,0.4211,0.025,54188736,swa_prompt__maxsim_q__csls0.5.zip
+kd_moe_to_decoder4__maxsim_sym__csls0.5__bm25w0.25,0.3369,0.3114,0.3668,0.3114,dense+bm25,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,0.5,0.25,,0.4165,100.0,33152448,kd_moe_to_decoder4__maxsim_sym__csls0.5__bm25w0.25.zip
+prefix_ia3__maxsim_sym__csls0.5,0.3369,0.2984,0.3668,0.3114,dense,prefix_ia3,prefix,ia3,maxsim_sym,0.5,,,0.4096,0.088,54911808,prefix_ia3__maxsim_sym__csls0.5.zip
+decoder_partial__mean__csls0,0.3357,0.307,0.3656,0.3104,dense,decoder_partial,decoder,partial,mean,0,,,0.4325,19.789,54863424,decoder_partial__mean__csls0.zip
+kd_moe_to_decoder4__maxall__csls0.5,0.3357,0.2984,0.3656,0.3104,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxall,0.5,,,0.4165,100.0,33152448,kd_moe_to_decoder4__maxall__csls0.5.zip
+moe_full__maxsim_sym__csls0,0.3357,0.2919,0.3656,0.3104,dense,moe_full,moe,full,maxsim_sym,0,,,0.4165,100.0,141669696,moe_full__maxsim_sym__csls0.zip
+swa_prompt__maxall__csls0.5,0.3357,0.2897,0.3656,0.3104,dense,swa_prompt,swa,prompt,maxall,0.5,,,0.4211,0.025,54188736,swa_prompt__maxall__csls0.5.zip
+kd_moe_to_decoder4__maxsim_sym__csls0,0.3346,0.3049,0.3644,0.3094,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,0,,,0.4165,100.0,33152448,kd_moe_to_decoder4__maxsim_sym__csls0.zip
+moe_full__maxsim_sym__csls1,0.3335,0.3092,0.3632,0.3083,dense,moe_full,moe,full,maxsim_sym,1.0,,,0.4165,100.0,141669696,
+moe_full__maxsim_q__csls0.5,0.3302,0.2984,0.3596,0.3052,dense,moe_full,moe,full,maxsim_q,0.5,,,0.4165,100.0,141669696,
+prefix_lorma__maxsim_sym__csls0,0.3302,0.2962,0.3596,0.3052,dense,prefix_lorma,prefix,lorma,maxsim_sym,0,,,0.4119,1.391,55637568,
+swa_prompt__maxsim_sym__csls0,0.3302,0.2897,0.3596,0.3052,dense,swa_prompt,swa,prompt,maxsim_sym,0,,,0.4211,0.025,54188736,
+decoder_partial__mean__csls1,0.3291,0.2962,0.3584,0.3042,dense,decoder_partial,decoder,partial,mean,1.0,,,0.4325,19.789,54863424,
+prefix_lorma__maxsim_q__csls0.5,0.3291,0.2962,0.3584,0.3042,dense,prefix_lorma,prefix,lorma,maxsim_q,0.5,,,0.4119,1.391,55637568,
+moe_full__maxsim_sym__csls0.5__bm25w0.25,0.328,0.3049,0.3571,0.3032,dense+bm25,moe_full,moe,full,maxsim_sym,0.5,0.25,,0.4165,100.0,141669696,
+moe_full__maxall__csls0.5,0.328,0.2832,0.3571,0.3032,dense,moe_full,moe,full,maxall,0.5,,,0.4165,100.0,141669696,
+kd_moe_to_decoder4__maxsim_sym__csls1,0.3268,0.3049,0.3559,0.3022,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,1.0,,,0.4165,100.0,33152448,
+prefix_lorma__maxall__csls1,0.3268,0.3027,0.3559,0.3022,dense,prefix_lorma,prefix,lorma,maxall,1.0,,,0.4119,1.391,55637568,
+swa_prompt__maxall__csls1,0.3268,0.2919,0.3559,0.3022,dense,swa_prompt,swa,prompt,maxall,1.0,,,0.4211,0.025,54188736,
+moe_full__mean__csls0.5,0.3257,0.2984,0.3547,0.3011,dense,moe_full,moe,full,mean,0.5,,,0.4165,100.0,141669696,
+prefix_ia3__maxsim_sym__csls1,0.3257,0.2962,0.3547,0.3011,dense,prefix_ia3,prefix,ia3,maxsim_sym,1.0,,,0.4096,0.088,54911808,
+kd_moe_to_decoder4__mean__csls0.5,0.3257,0.2941,0.3547,0.3011,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),mean,0.5,,,0.4165,100.0,33152448,
+ens2__bm25w0.5,0.3246,0.3092,0.3535,0.3001,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 2 best runs,,,0.5,decoder_partial+swa_prompt,,,,
+decoder_partial__maxsim_sym__csls0.5__bm25w0.5,0.3246,0.3049,0.3535,0.3001,dense+bm25,decoder_partial,decoder,partial,maxsim_sym,0.5,0.5,,0.4325,19.789,54863424,
+prefix_ia3__maxsim_sym__csls0.5__bm25w0.25,0.3246,0.2962,0.3535,0.3001,dense+bm25,prefix_ia3,prefix,ia3,maxsim_sym,0.5,0.25,,0.4096,0.088,54911808,
+moe_full__maxsim_q__csls0,0.3246,0.2876,0.3535,0.3001,dense,moe_full,moe,full,maxsim_q,0,,,0.4165,100.0,141669696,
+kd_moe_to_prefix4__maxsim_sym__csls0.5,0.3246,0.2854,0.3535,0.3001,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,0.5,,,0.4165,100.0,33152448,kd_moe_to_prefix4__maxsim_sym__csls0.5.zip
+prefix_ia3__maxall__csls0.5,0.3246,0.2811,0.3535,0.3001,dense,prefix_ia3,prefix,ia3,maxall,0.5,,,0.4096,0.088,54911808,
+encdec_lorma__maxsim_sym__csls0.5,0.3235,0.2984,0.3523,0.2991,dense,encdec_lorma,encdec,lorma,maxsim_sym,0.5,,,0.4256,1.16,33367488,encdec_lorma__maxsim_sym__csls0.5.zip
+swa_prompt__mean__csls0.5,0.3235,0.2941,0.3523,0.2991,dense,swa_prompt,swa,prompt,mean,0.5,,,0.4211,0.025,54188736,
+kd_moe_to_prefix4__maxall__csls0.5,0.3235,0.2919,0.3523,0.2991,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxall,0.5,,,0.4165,100.0,33152448,
+prefix_ia3__maxsim_sym__csls0,0.3224,0.2746,0.3511,0.298,dense,prefix_ia3,prefix,ia3,maxsim_sym,0,,,0.4096,0.088,54911808,
+moe_full__mean__csls0,0.3202,0.2962,0.3487,0.296,dense,moe_full,moe,full,mean,0,,,0.4165,100.0,141669696,
+prefix_lorma__maxsim_sym__csls1,0.3202,0.2854,0.3487,0.296,dense,prefix_lorma,prefix,lorma,maxsim_sym,1.0,,,0.4119,1.391,55637568,
+swa_prompt__maxsim_sym__csls0.5__bm25w0.5,0.3191,0.307,0.3475,0.295,dense+bm25,swa_prompt,swa,prompt,maxsim_sym,0.5,0.5,,0.4211,0.025,54188736,
+kd_moe_to_decoder4__maxsim_q__csls0,0.3191,0.3005,0.3475,0.295,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_q,0,,,0.4165,100.0,33152448,
+prefix_lorma__maxall__csls0,0.3191,0.2962,0.3475,0.295,dense,prefix_lorma,prefix,lorma,maxall,0,,,0.4119,1.391,55637568,
+prefix_ia3__maxsim_q__csls0.5,0.3191,0.2854,0.3475,0.295,dense,prefix_ia3,prefix,ia3,maxsim_q,0.5,,,0.4096,0.088,54911808,
+decoder_partial__maxsim_q__csls1,0.3191,0.2832,0.3475,0.295,dense,decoder_partial,decoder,partial,maxsim_q,1.0,,,0.4325,19.789,54863424,
+ens3__bm25w0.5,0.318,0.3005,0.3462,0.2939,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 3 best runs,,,0.5,decoder_partial+swa_prompt+kd_moe_to_decoder4,,,,
+prefix_lorma__maxall__csls0.5__bm25w0.25,0.318,0.2962,0.3462,0.2939,dense+bm25,prefix_lorma,prefix,lorma,maxall,0.5,0.25,,0.4119,1.391,55637568,
+kd_moe_to_prefix4__maxsim_sym__csls0.5__bm25w0.25,0.318,0.2941,0.3462,0.2939,dense+bm25,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,0.5,0.25,,0.4165,100.0,33152448,
+ens4__bm25w0.5,0.3168,0.2941,0.345,0.2929,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 4 best runs,,,0.5,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full,,,,
+swa_prompt__mean__csls1,0.3168,0.2854,0.345,0.2929,dense,swa_prompt,swa,prompt,mean,1.0,,,0.4211,0.025,54188736,
+ens5__bm25w0.5,0.3157,0.2962,0.3438,0.2919,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 5 best runs,,,0.5,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma,,,,
+swa_prompt__maxall__csls0,0.3157,0.2703,0.3438,0.2919,dense,swa_prompt,swa,prompt,maxall,0,,,0.4211,0.025,54188736,
+swa_prompt__maxsim_q__csls1,0.3146,0.2919,0.3426,0.2909,dense,swa_prompt,swa,prompt,maxsim_q,1.0,,,0.4211,0.025,54188736,
+moe_full__mean__csls1,0.3146,0.2897,0.3426,0.2909,dense,moe_full,moe,full,mean,1.0,,,0.4165,100.0,141669696,
+kd_moe_to_decoder4__mean__csls0,0.3146,0.2876,0.3426,0.2909,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),mean,0,,,0.4165,100.0,33152448,
+kd_moe_to_decoder4__maxall__csls0,0.3146,0.2832,0.3426,0.2909,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxall,0,,,0.4165,100.0,33152448,
+kd_moe_to_prefix4__maxsim_q__csls0.5,0.3146,0.2703,0.3426,0.2909,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_q,0.5,,,0.4165,100.0,33152448,
+encdec_lorma__maxall__csls0.5,0.3135,0.2876,0.3414,0.2898,dense,encdec_lorma,encdec,lorma,maxall,0.5,,,0.4256,1.16,33367488,
+moe_full__maxall__csls1,0.3135,0.2724,0.3414,0.2898,dense,moe_full,moe,full,maxall,1.0,,,0.4165,100.0,141669696,
+kd_moe_to_decoder4__maxall__csls1,0.3124,0.2854,0.3402,0.2888,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxall,1.0,,,0.4165,100.0,33152448,
+kd_moe_to_prefix4__maxsim_sym__csls1,0.3124,0.2832,0.3402,0.2888,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,1.0,,,0.4165,100.0,33152448,
+moe_full__maxall__csls0,0.3124,0.2724,0.3402,0.2888,dense,moe_full,moe,full,maxall,0,,,0.4165,100.0,141669696,
+encdec_lorma__maxsim_sym__csls0.5__bm25w0.25,0.3113,0.2854,0.339,0.2878,dense+bm25,encdec_lorma,encdec,lorma,maxsim_sym,0.5,0.25,,0.4256,1.16,33367488,
+prefix_lorma__mean__csls0.5,0.3113,0.2811,0.339,0.2878,dense,prefix_lorma,prefix,lorma,mean,0.5,,,0.4119,1.391,55637568,
+prefix_ia3__maxall__csls0,0.3113,0.2746,0.339,0.2878,dense,prefix_ia3,prefix,ia3,maxall,0,,,0.4096,0.088,54911808,
+prefix_lorma__maxsim_q__csls0,0.3102,0.2832,0.3378,0.2867,dense,prefix_lorma,prefix,lorma,maxsim_q,0,,,0.4119,1.391,55637568,
+swa_prompt__maxsim_q__csls0,0.3102,0.2746,0.3378,0.2867,dense,swa_prompt,swa,prompt,maxsim_q,0,,,0.4211,0.025,54188736,
+kd_moe_to_prefix4__maxsim_sym__csls0,0.3102,0.2659,0.3378,0.2867,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,0,,,0.4165,100.0,33152448,
+kd_moe_to_decoder4__maxsim_sym__csls0.5__bm25w0.5,0.3091,0.2876,0.3366,0.2857,dense+bm25,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,0.5,0.5,,0.4165,100.0,33152448,
+ens6__bm25w0.5,0.3091,0.2854,0.3366,0.2857,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 6 best runs,,,0.5,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3,,,,
+ens8__bm25w0.5,0.3079,0.2832,0.3354,0.2847,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 8 best runs,,,0.5,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4+encdec_lorma,,,,
+encdec_lorma__maxsim_q__csls0.5,0.3079,0.2768,0.3354,0.2847,dense,encdec_lorma,encdec,lorma,maxsim_q,0.5,,,0.4256,1.16,33367488,
+kd_moe_to_prefix4__maxall__csls1,0.3068,0.2746,0.3341,0.2837,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxall,1.0,,,0.4165,100.0,33152448,
+moe_full__maxsim_q__csls1,0.3068,0.2703,0.3341,0.2837,dense,moe_full,moe,full,maxsim_q,1.0,,,0.4165,100.0,141669696,
+ens7__bm25w0.5,0.3057,0.2811,0.3329,0.2826,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 7 best runs,,,0.5,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4,,,,
+kd_moe_to_decoder4__mean__csls1,0.3057,0.2789,0.3329,0.2826,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),mean,1.0,,,0.4165,100.0,33152448,
+encdec_lorma__maxsim_sym__csls0,0.3057,0.2724,0.3329,0.2826,dense,encdec_lorma,encdec,lorma,maxsim_sym,0,,,0.4256,1.16,33367488,
+prefix_ia3__maxall__csls1,0.3046,0.2789,0.3317,0.2816,dense,prefix_ia3,prefix,ia3,maxall,1.0,,,0.4096,0.088,54911808,
+prefix_lorma__mean__csls0,0.3035,0.2746,0.3305,0.2806,dense,prefix_lorma,prefix,lorma,mean,0,,,0.4119,1.391,55637568,
+kd_moe_to_prefix4__mean__csls0.5,0.3035,0.2724,0.3305,0.2806,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),mean,0.5,,,0.4165,100.0,33152448,
+prefix_ia3__mean__csls1,0.3024,0.2919,0.3293,0.2795,dense,prefix_ia3,prefix,ia3,mean,1.0,,,0.4096,0.088,54911808,
+kd_moe_to_decoder4__maxsim_q__csls1,0.3024,0.2854,0.3293,0.2795,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_q,1.0,,,0.4165,100.0,33152448,
+prefix_ia3__maxsim_q__csls0,0.3024,0.2703,0.3293,0.2795,dense,prefix_ia3,prefix,ia3,maxsim_q,0,,,0.4096,0.088,54911808,
+kd_moe_to_prefix4__maxall__csls0,0.3013,0.2638,0.3281,0.2785,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxall,0,,,0.4165,100.0,33152448,
+moe_full__maxsim_sym__csls0.5__bm25w0.5,0.3002,0.2746,0.3269,0.2775,dense+bm25,moe_full,moe,full,maxsim_sym,0.5,0.5,,0.4165,100.0,141669696,
+prefix_ia3__mean__csls0.5,0.3002,0.2703,0.3269,0.2775,dense,prefix_ia3,prefix,ia3,mean,0.5,,,0.4096,0.088,54911808,
+encdec_lorma__maxsim_sym__csls1,0.2991,0.2811,0.3257,0.2765,dense,encdec_lorma,encdec,lorma,maxsim_sym,1.0,,,0.4256,1.16,33367488,
+kd_moe_to_prefix4__maxsim_q__csls0,0.2991,0.2703,0.3257,0.2765,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_q,0,,,0.4165,100.0,33152448,
+encdec_lorma__maxall__csls0,0.2979,0.2703,0.3245,0.2754,dense,encdec_lorma,encdec,lorma,maxall,0,,,0.4256,1.16,33367488,
+prefix_lorma__maxsim_q__csls1,0.2979,0.2659,0.3245,0.2754,dense,prefix_lorma,prefix,lorma,maxsim_q,1.0,,,0.4119,1.391,55637568,
+swa_prompt__mean__csls0,0.2957,0.2746,0.322,0.2734,dense,swa_prompt,swa,prompt,mean,0,,,0.4211,0.025,54188736,
+prefix_ia3__maxsim_sym__csls0.5__bm25w0.5,0.2935,0.2659,0.3196,0.2713,dense+bm25,prefix_ia3,prefix,ia3,maxsim_sym,0.5,0.5,,0.4096,0.088,54911808,
+encdec_lorma__maxsim_q__csls0,0.2935,0.2595,0.3196,0.2713,dense,encdec_lorma,encdec,lorma,maxsim_q,0,,,0.4256,1.16,33367488,
+prefix_lorma__mean__csls1,0.2924,0.2768,0.3184,0.2703,dense,prefix_lorma,prefix,lorma,mean,1.0,,,0.4119,1.391,55637568,
+kd_moe_to_prefix4__mean__csls0,0.2924,0.2595,0.3184,0.2703,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),mean,0,,,0.4165,100.0,33152448,
+encdec_lorma__mean__csls0.5,0.2924,0.2573,0.3184,0.2703,dense,encdec_lorma,encdec,lorma,mean,0.5,,,0.4256,1.16,33367488,
+kd_moe_to_prefix4__mean__csls1,0.2913,0.2768,0.3172,0.2693,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),mean,1.0,,,0.4165,100.0,33152448,
+prefix_ia3__maxsim_q__csls1,0.2913,0.2681,0.3172,0.2693,dense,prefix_ia3,prefix,ia3,maxsim_q,1.0,,,0.4096,0.088,54911808,
+kd_moe_to_prefix4__maxsim_sym__csls0.5__bm25w0.5,0.2902,0.2746,0.316,0.2682,dense+bm25,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,0.5,0.5,,0.4165,100.0,33152448,
+encdec_lorma__mean__csls1,0.2902,0.2659,0.316,0.2682,dense,encdec_lorma,encdec,lorma,mean,1.0,,,0.4256,1.16,33367488,
+prefix_ia3__mean__csls0,0.2902,0.2573,0.316,0.2682,dense,prefix_ia3,prefix,ia3,mean,0,,,0.4096,0.088,54911808,
+encdec_lorma__mean__csls0,0.2902,0.2551,0.316,0.2682,dense,encdec_lorma,encdec,lorma,mean,0,,,0.4256,1.16,33367488,
+ens2__bm25w1,0.2846,0.2681,0.3099,0.2631,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 2 best runs,,,1,decoder_partial+swa_prompt,,,,
+decoder_partial__maxsim_sym__csls0.5__bm25w1,0.2835,0.2703,0.3087,0.2621,dense+bm25,decoder_partial,decoder,partial,maxsim_sym,0.5,1,,0.4325,19.789,54863424,
+encdec_lorma__maxsim_sym__csls0.5__bm25w0.5,0.2835,0.2703,0.3087,0.2621,dense+bm25,encdec_lorma,encdec,lorma,maxsim_sym,0.5,0.5,,0.4256,1.16,33367488,
+ens3__bm25w1,0.2813,0.2681,0.3063,0.26,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 3 best runs,,,1,decoder_partial+swa_prompt+kd_moe_to_decoder4,,,,
+swa_prompt__maxsim_sym__csls0.5__bm25w1,0.2802,0.2659,0.3051,0.259,dense+bm25,swa_prompt,swa,prompt,maxsim_sym,0.5,1,,0.4211,0.025,54188736,
+encdec_lorma__maxsim_q__csls1,0.279,0.2595,0.3039,0.258,dense,encdec_lorma,encdec,lorma,maxsim_q,1.0,,,0.4256,1.16,33367488,
+ens4__bm25w1,0.2779,0.2681,0.3027,0.2569,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 4 best runs,,,1,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full,,,,
+prefix_lorma__maxall__csls0.5__bm25w0.5,0.2779,0.2659,0.3027,0.2569,dense+bm25,prefix_lorma,prefix,lorma,maxall,0.5,0.5,,0.4119,1.391,55637568,
+kd_moe_to_prefix4__maxsim_q__csls1,0.2779,0.2422,0.3027,0.2569,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_q,1.0,,,0.4165,100.0,33152448,
+encdec_lorma__maxall__csls1,0.2746,0.2573,0.299,0.2539,dense,encdec_lorma,encdec,lorma,maxall,1.0,,,0.4256,1.16,33367488,
+ens5__bm25w1,0.2735,0.2616,0.2978,0.2528,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 5 best runs,,,1,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma,,,,
+ens6__bm25w1,0.2724,0.2638,0.2966,0.2518,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 6 best runs,,,1,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3,,,,
+ens8__bm25w1,0.2702,0.2551,0.2942,0.2497,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 8 best runs,,,1,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4+encdec_lorma,,,,
+ens7__bm25w1,0.269,0.2573,0.293,0.2487,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 7 best runs,,,1,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4,,,,
+kd_moe_to_decoder4__maxsim_sym__csls0.5__bm25w1,0.2635,0.2508,0.2869,0.2436,dense+bm25,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,0.5,1,,0.4165,100.0,33152448,
+moe_full__maxsim_sym__csls0.5__bm25w1,0.2601,0.2508,0.2833,0.2405,dense+bm25,moe_full,moe,full,maxsim_sym,0.5,1,,0.4165,100.0,141669696,
+prefix_ia3__maxsim_sym__csls0.5__bm25w1,0.2568,0.2486,0.2797,0.2374,dense+bm25,prefix_ia3,prefix,ia3,maxsim_sym,0.5,1,,0.4096,0.088,54911808,
+kd_moe_to_prefix4__maxsim_sym__csls0.5__bm25w1,0.2524,0.2378,0.2748,0.2333,dense+bm25,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,0.5,1,,0.4165,100.0,33152448,
+encdec_lorma__maxsim_sym__csls0.5__bm25w1,0.249,0.2357,0.2712,0.2302,dense+bm25,encdec_lorma,encdec,lorma,maxsim_sym,0.5,1,,0.4256,1.16,33367488,
+prefix_lorma__maxall__csls0.5__bm25w1,0.2468,0.2335,0.2688,0.2282,dense+bm25,prefix_lorma,prefix,lorma,maxall,0.5,1,,0.4119,1.391,55637568,
+decoder_partial__first__csls0.5,0.2457,0.2097,0.2676,0.2271,dense,decoder_partial,decoder,partial,first,0.5,,,0.4325,19.789,54863424,
+decoder_partial__maxsim_sym__csls0.5__bm25w2,0.239,0.2314,0.2603,0.221,dense+bm25,decoder_partial,decoder,partial,maxsim_sym,0.5,2,,0.4325,19.789,54863424,
+ens4__bm25w2,0.2379,0.227,0.2591,0.2199,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 4 best runs,,,2,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full,,,,
+ens2__bm25w2,0.2379,0.2249,0.2591,0.2199,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 2 best runs,,,2,decoder_partial+swa_prompt,,,,
+swa_prompt__maxsim_sym__csls0.5__bm25w2,0.2368,0.2249,0.2579,0.2189,dense+bm25,swa_prompt,swa,prompt,maxsim_sym,0.5,2,,0.4211,0.025,54188736,
+ens3__bm25w2,0.2368,0.2227,0.2579,0.2189,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 3 best runs,,,2,decoder_partial+swa_prompt+kd_moe_to_decoder4,,,,
+decoder_partial__first__csls1,0.2368,0.2097,0.2579,0.2189,dense,decoder_partial,decoder,partial,first,1.0,,,0.4325,19.789,54863424,
+decoder_partial__first__csls0,0.2368,0.1968,0.2579,0.2189,dense,decoder_partial,decoder,partial,first,0,,,0.4325,19.789,54863424,
+kd_moe_to_decoder4__maxsim_sym__csls0.5__bm25w2,0.2346,0.2205,0.2554,0.2169,dense+bm25,kd_moe_to_decoder4,decoder,full (KD from moe_full),maxsim_sym,0.5,2,,0.4165,100.0,33152448,
+ens5__bm25w2,0.2346,0.2205,0.2554,0.2169,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 5 best runs,,,2,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma,,,,
+ens6__bm25w2,0.2346,0.2205,0.2554,0.2169,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 6 best runs,,,2,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3,,,,
+ens7__bm25w2,0.2346,0.2205,0.2554,0.2169,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 7 best runs,,,2,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4,,,,
+ens8__bm25w2,0.2346,0.2205,0.2554,0.2169,ensemble+bm25,ensemble,ensemble,mean of z-scores of the 8 best runs,,,2,decoder_partial+swa_prompt+kd_moe_to_decoder4+moe_full+prefix_lorma+prefix_ia3+kd_moe_to_prefix4+encdec_lorma,,,,
+moe_full__maxsim_sym__csls0.5__bm25w2,0.2301,0.2249,0.2506,0.2127,dense+bm25,moe_full,moe,full,maxsim_sym,0.5,2,,0.4165,100.0,141669696,
+prefix_ia3__maxsim_sym__csls0.5__bm25w2,0.2246,0.2184,0.2446,0.2076,dense+bm25,prefix_ia3,prefix,ia3,maxsim_sym,0.5,2,,0.4096,0.088,54911808,
+kd_moe_to_decoder4__first__csls0.5,0.2246,0.2011,0.2446,0.2076,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),first,0.5,,,0.4165,100.0,33152448,
+kd_moe_to_prefix4__maxsim_sym__csls0.5__bm25w2,0.2235,0.2205,0.2433,0.2066,dense+bm25,kd_moe_to_prefix4,prefix,full (KD from moe_full),maxsim_sym,0.5,2,,0.4165,100.0,33152448,
+encdec_lorma__maxsim_sym__csls0.5__bm25w2,0.2223,0.2097,0.2421,0.2055,dense+bm25,encdec_lorma,encdec,lorma,maxsim_sym,0.5,2,,0.4256,1.16,33367488,
+kd_moe_to_decoder4__first__csls0,0.2223,0.1946,0.2421,0.2055,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),first,0,,,0.4165,100.0,33152448,
+kd_moe_to_decoder4__first__csls1,0.2201,0.1989,0.2397,0.2035,dense,kd_moe_to_decoder4,decoder,full (KD from moe_full),first,1.0,,,0.4165,100.0,33152448,
+prefix_lorma__maxall__csls0.5__bm25w2,0.219,0.2097,0.2385,0.2025,dense+bm25,prefix_lorma,prefix,lorma,maxall,0.5,2,,0.4119,1.391,55637568,
+prefix_ia3__first__csls0.5,0.219,0.1903,0.2385,0.2025,dense,prefix_ia3,prefix,ia3,first,0.5,,,0.4096,0.088,54911808,
+prefix_lorma__first__csls0.5,0.2168,0.1838,0.2361,0.2004,dense,prefix_lorma,prefix,lorma,first,0.5,,,0.4119,1.391,55637568,
+moe_full__first__csls0.5,0.2157,0.1903,0.2349,0.1994,dense,moe_full,moe,full,first,0.5,,,0.4165,100.0,141669696,
+swa_prompt__first__csls1,0.2135,0.1816,0.2324,0.1973,dense,swa_prompt,swa,prompt,first,1.0,,,0.4211,0.025,54188736,
+prefix_lorma__first__csls0,0.2123,0.1751,0.2312,0.1963,dense,prefix_lorma,prefix,lorma,first,0,,,0.4119,1.391,55637568,
+swa_prompt__first__csls0.5,0.2101,0.1816,0.2288,0.1942,dense,swa_prompt,swa,prompt,first,0.5,,,0.4211,0.025,54188736,
+moe_full__first__csls1,0.2057,0.1968,0.224,0.1901,dense,moe_full,moe,full,first,1.0,,,0.4165,100.0,141669696,
+swa_prompt__first__csls0,0.2046,0.1795,0.2228,0.1891,dense,swa_prompt,swa,prompt,first,0,,,0.4211,0.025,54188736,
+prefix_ia3__first__csls0,0.2023,0.1622,0.2203,0.1871,dense,prefix_ia3,prefix,ia3,first,0,,,0.4096,0.088,54911808,
+prefix_lorma__first__csls1,0.2001,0.1751,0.2179,0.185,dense,prefix_lorma,prefix,lorma,first,1.0,,,0.4119,1.391,55637568,
+kd_moe_to_prefix4__first__csls0,0.2001,0.1557,0.2179,0.185,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),first,0,,,0.4165,100.0,33152448,
+prefix_ia3__first__csls1,0.199,0.1816,0.2167,0.184,dense,prefix_ia3,prefix,ia3,first,1.0,,,0.4096,0.088,54911808,
+encdec_lorma__first__csls0.5,0.199,0.1622,0.2167,0.184,dense,encdec_lorma,encdec,lorma,first,0.5,,,0.4256,1.16,33367488,
+kd_moe_to_prefix4__first__csls0.5,0.1968,0.1686,0.2143,0.1819,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),first,0.5,,,0.4165,100.0,33152448,
+moe_full__first__csls0,0.1968,0.1643,0.2143,0.1819,dense,moe_full,moe,full,first,0,,,0.4165,100.0,141669696,
+kd_moe_to_prefix4__first__csls1,0.1957,0.173,0.2131,0.1809,dense,kd_moe_to_prefix4,prefix,full (KD from moe_full),first,1.0,,,0.4165,100.0,33152448,
+encdec_lorma__first__csls0,0.1923,0.1514,0.2094,0.1778,dense,encdec_lorma,encdec,lorma,first,0,,,0.4256,1.16,33367488,
+encdec_lorma__first__csls1,0.1845,0.1643,0.201,0.1706,dense,encdec_lorma,encdec,lorma,first,1.0,,,0.4256,1.16,33367488,
+(reference) BM25 only over Phase-1 tokens,0.1779,0.1751,0.1937,0.1644,reference,-,-,lexical (not a Phase-1 model),,,,,,,,
